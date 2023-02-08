@@ -1,5 +1,5 @@
 
-function About (props){
+function Main (props){
     return(
         <>
         <h2>{props.string}</h2>
@@ -10,4 +10,4 @@ function About (props){
     )
 }
 
-export default About;
+export default Main;

@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-import About from './components/About';
+import Main from './components/Main';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
   return (
     < >
       <Header title={title} />
-      <About string={"My in-line Heading"}/>
+      <Main string={"My in-line Heading"}/>
       <Footer />
     </>
   );
