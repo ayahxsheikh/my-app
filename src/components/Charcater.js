@@ -1,6 +1,6 @@
-function Character(){
+function Character(props){
     return(
-        <li>Name:{"charcter_name"}</li>
+        <li>Name: {props.name}</li>
     )
 }
 
