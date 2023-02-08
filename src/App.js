@@ -5,10 +5,11 @@ import About from './components/About';
 function App() {
 
   const title = 'My App Logo'
+
   return (
     < >
       <Header title={title} />
-      <About />
+      <About string={"My in-line Heading"}/>
       <Footer />
     </>
   );
