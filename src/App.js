@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import swData from './data.json';
 
 import Header from './components/Header';
 import Main from './components/Main';
