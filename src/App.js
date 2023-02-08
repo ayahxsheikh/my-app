@@ -21,7 +21,11 @@ function App() {
 
       <section>
       <ul>
-      
+      {swData.map((char, index) => {
+        <Character 
+        
+        />
+      })}
       </ul>
       </section>
 
