@@ -3,9 +3,11 @@ import Footer from './components/Footer';
 import About from './components/About';
 
 function App() {
+
+  const title = 'My App Logo'
   return (
     < >
-      <Header />
+      <Header title={title} />
       <About />
       <Footer />
     </>

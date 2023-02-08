@@ -1,9 +1,9 @@
 
 
-function Header(){
+function Header(props){
     return(
         <header>
-            <h3>My Logo</h3>
+            <h3>{props.title}</h3>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">About</a>
