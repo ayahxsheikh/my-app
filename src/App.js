@@ -16,7 +16,10 @@ function App() {
   useEffect(() => {
     fetch("https://swapi.dev/api/people/?page=2")
     .then(res => res.json())
-    .then()
+    .then(data => {
+      console.log(data.results)
+      setSwData(data.results)
+    })
   }, [])
 
   return (
