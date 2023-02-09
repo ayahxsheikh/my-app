@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import swData from './data.json';
+import { useState, useEffect } from 'react';
+
 
 import Header from './components/Header';
 import Main from './components/Main';
@@ -10,6 +10,8 @@ function App() {
   const [showMain, setShowMain] = useState(true);
 
   const toggleMain = () => setShowMain(!showMain);
+
+  const [swData, setSwData] = useState([]);
 
   return (
     <div>
