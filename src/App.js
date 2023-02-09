@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import swData from './swData.json';
+import swData from './data.json';
 
 import Header from './components/Header';
 import Main from './components/Main';
-import Character from './components/Charcater';
+import Character from './components/Character';
 
 function App() {
   const brand = 'We are the best!';
@@ -20,14 +20,13 @@ function App() {
       <button onClick={toggleMain}>Toggle Main</button>
 
       <section>
-      <ul>
-      {swData.map((char, index) => (
-        <Character 
-        key={index}
-        name={char.name}
-        />
-      ))}
-      </ul>
+
+        <ul>
+          {swData.map((charObj, index) => (
+            <Character key={index} name={charObj.name} />
+          ))}
+        </ul>
+
       </section>
 
     </div>
@@ -35,3 +34,5 @@ function App() {
 }
 
 export default App;
+
+
