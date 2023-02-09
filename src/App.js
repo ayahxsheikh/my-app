@@ -12,12 +12,13 @@ function App() {
   const toggleMain = () => setShowMain(!showMain);
 
   const [swData, setSwData] = useState([]);
+  // its set to an empty array because map() will later be able to iterate over the items returned from the fetch request below.
 
   useEffect(() => {
     fetch("https://swapi.dev/api/people/?page=2")
     .then(res => res.json())
     .then(data => {
-      console.log(data.results)
+      console.log(data)
       setSwData(data.results)
     })
   }, [])
@@ -33,7 +34,10 @@ function App() {
       <section>
 
         <ul>
-          {swData.map((charObj, index) => (
+          {!swData.length ?
+          <p>The Data is Loading</p> :
+          // add a turenary expression for when loading is long
+          swData.map((charObj, index) => (
             <Character key={index} name={charObj.name} />
           ))}
         </ul>
