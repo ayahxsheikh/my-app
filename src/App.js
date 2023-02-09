@@ -18,7 +18,7 @@ function App() {
     fetch("https://swapi.dev/api/people/?page=2")
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      console.log(data.results)
       setSwData(data.results)
     })
   }, [])
