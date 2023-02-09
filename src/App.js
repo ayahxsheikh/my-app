@@ -13,6 +13,10 @@ function App() {
 
   const [swData, setSwData] = useState([]);
 
+  useEffect(() => {
+    fetch("https://swapi.dev/api/people/?page=2")
+  }, [])
+
   return (
     <div>
       <Header brand={brand} />
